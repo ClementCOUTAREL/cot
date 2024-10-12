@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     </head>
     <body >
-        <header>
+        <header id="appHeader" class="transparent">
             <p>COT</p>
             <nav>
                 <ul>
@@ -29,5 +29,6 @@
         <footer>
             <p>Created by COT. All rights reserved</p>
         </footer>
+        @yield('script')
     </body>
 </html>

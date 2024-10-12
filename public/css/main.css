@@ -23,24 +23,44 @@ body {
     background-color: var(--main-background);
 }
 
+/* SHARED */
+
 header,
+footer {
+    padding: 1rem;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
 footer {
     background-color: var(--dark-maroon);
     color: white;
     padding: 1rem;
 }
 
-header a,
-footer a {
-    color: white;
-    text-decoration: none;
-}
+/* HEADER */
+
 
 header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--dark-maroon);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.transparent {
+    background-color: transparent;
 }
 
 header ul {
@@ -54,13 +74,24 @@ header ul li {
     list-style: none;
 }
 
+/* MAIN */
+
+.hero {
+    height: 100vh;
+    background-image: url("/images/hero.jpg");
+    background-size: cover;
+}
+
 .container {
     padding: 2rem 3rem;
 }
 
+.appSection {
+    padding: 3rem;
+}
+
+/* FOOTER */
+
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
